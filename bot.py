@@ -147,7 +147,7 @@ class Archive:
         elif message.video_note is not None:
             if MEDIA_EXPORT['video_messages'] is True:
                 self.video_message_num += 1
-                names = get_video_name(
+                names = get_video_note_name(
                     message,
                     self.username,
                     self.video_message_num
